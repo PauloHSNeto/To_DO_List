@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from todo.models import *
+from todo.forms import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),

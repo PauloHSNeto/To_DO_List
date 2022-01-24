@@ -5,7 +5,15 @@
     <title>Todo Lisk</title>
 </head>
 <body>
-<h3>
+<h3><div>"TODO LIST"</div>
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    {{ forms.title }}
+     <input type="submit" name="Add a task">
+</form>
+
+
     {% for task in tasks %}
         <div>
         <p>{{ task }}</p>
